@@ -13,8 +13,8 @@
 ### cd home-data
 
 
-### oh-my-zsh安装教程
-#### git clone https://gitee.com/qingmengfengyun/oh-my-zsh.git ./oh-my-zsh/.oh-my-zsh/
+### oh-my-zsh安装教程(清华源)
+#### git clone https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git ./oh-my-zsh/.oh-my-zsh/
 #### git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ./oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 #### git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ./oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 #### stow -t ~ oh-my-zsh
