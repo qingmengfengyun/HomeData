@@ -2,7 +2,7 @@
 
 
 ## 需要安装软件：
-#### stow vim neovim zsh kitty neofetch anaconda terminator
+#### git stow vim neovim zsh kitty neofetch anaconda terminator
 
 
 ## 下载home-data包
