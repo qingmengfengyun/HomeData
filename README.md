@@ -14,9 +14,16 @@
 
 
 ### oh-my-zsh安装教程(清华源)
-#### git clone https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git ./oh-my-zsh/.oh-my-zsh/
-#### git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ./oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-#### git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ./oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+#### 切换到zsh：chsh -s /bin/zsh
+
+#### clone oh-my-zsh
+git clone https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git ./oh-my-zsh/.oh-my-zsh/
+
+#### clone zsh-syntax-highlighting 插件 
+git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ./oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+#### clone zsh-autosuggestions 插件
+git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ./oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 #### stow -t ~ oh-my-zsh
 
 
