@@ -28,6 +28,7 @@
 
 
 ### sapcevim安装教程:
+#### 测试
 #### stow -t ~ SpaceVim
 #### ln -s ./SapceVim/.SpaceVim/  ~/.config/nvim
 #### ln -s ./SapceVim/.SpaceVim/  ~/.vim
