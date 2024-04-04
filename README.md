@@ -6,11 +6,11 @@
 
 
 ## 下载home-data包
-### git clone https://gitee.com/qingmengfengyun/home-data.git
+### git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData
 
 
 ## 以下命令需要进入home-data文件夹下执行
-### cd home-data
+### cd HomeData
 
 
 ### oh-my-zsh安装教程(清华源)
