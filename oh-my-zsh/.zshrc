@@ -141,8 +141,23 @@ alias exp="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:
 #alias jar="/usr/local/jdk-17.0.7/bin/jar"
 
 # mysq设置
-#alias mysqlq="mysql -uqingm -pPei19921022"
-#alias mysqlr="mysql -uroot -pPei@19921022"
+#alias mysqlq="mysql -uqingm -pxxxxxxxxxx"
+#alias mysqlr="mysql -uroot -pxxxxxxxxxx"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/home/qingm/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/qingm/.anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/qingm/.anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/qingm/.anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
 
 # 高亮插件
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
