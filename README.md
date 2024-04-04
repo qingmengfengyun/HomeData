@@ -10,7 +10,7 @@
 
 
 ## 以下命令需要进入home-data文件夹下执行
-### cd HomeData
+### cd ~/HomeData
 
 
 ### oh-my-zsh安装教程(清华源)
@@ -29,7 +29,7 @@
 
 ### sapcevim安装教程:
 #### stow -t ~ SpaceVim
-#### ln -s ./SpaceVim/.SpaceVim/  ~/.config/nvim
-#### ln -s ./SpaceVim/.SpaceVim/  ~/.vim
+#### ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
+#### ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.vim
 
 
