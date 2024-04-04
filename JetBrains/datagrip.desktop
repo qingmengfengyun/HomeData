@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=datagrip
+Comment=datagrip Client
+Exec=/opt/DataGrip-2023.1.2/bin/datagrip.sh
+Icon=/opt/DataGrip-2023.1.2/bin/datagrip3.svg
+Terminal=false
+Type=Application
+Categories=Application;
+Encoding=UTF-8
+StartupNotify=true

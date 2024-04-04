@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Pycharm
+GenericName=Pycharm3
+Comment=Pycharm3:The Python IDE
+Exec=sh /opt/pycharm-community-2023.1.2/bin/pycharm.sh
+Icon=/opt/pycharm-community-2023.1.2/bin/pycharm3.svg
+Terminal=pycharm
+Categories=Pycharm;
