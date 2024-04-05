@@ -6,12 +6,11 @@ git stow vim neovim zsh kitty neofetch terminator gitui (可选安装anaconda)
 
 
 ## 下载home-data包
-### git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
-### 包含了oh-my-zsh子项目(清华源)
+git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
 
 
 ## 以下命令需要进入home-data文件夹下执行
-### cd ~/HomeData
+cd ~/HomeData
 
 
 ### oh-my-zsh配置
