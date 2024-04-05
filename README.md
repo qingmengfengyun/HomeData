@@ -6,7 +6,7 @@ git stow vim neovim zsh kitty neofetch terminator gitui (可选安装anaconda)
 
 
 ## 下载home-data包
-git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData
+git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
 包含了oh-my-zsh子项目(清华源)
 
 
@@ -17,16 +17,13 @@ cd ~/HomeData
 ### 加载oh-my-zsh配置
 #### 切换到zsh: chsh -s /bin/zsh
 stow -t ~ oh-my-zsh
-source ~/.zshrc
 
-#### clone zsh-autosuggestions 插件
-git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestion
-
-#### clone zsh-syntax-highlighting 插件 
+#### 安装插件 zsh-autosuggestions zsh-syntax-highlighting
+git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-#### clone oh-my-zsh
-git clone https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git ./oh-my-zsh/.oh-my-zsh/(忽略)
+#### 使用配置
+source ~/.zshrc
 
 
 ### 常用工具加载配置文件
