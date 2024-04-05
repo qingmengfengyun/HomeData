@@ -23,9 +23,14 @@ chsh -s /bin/zsh
 #### 加载所有配置文件 
 stow -t ~ */
 
-#### 安装插件 zsh-autosuggestions zsh-syntax-highlighting
+
+#### 安装插件和主题 zsh-autosuggestions zsh-syntax-highlighting
 ##### git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ##### git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+##### git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ~/.oh-my-zsh/custom/themes
+
+如果powerlevel10k字体缺失，可以到github上下载字体，然后存放在"~/.local/share/fonts/ttf/MesloLGS NF"
+
 
 ### sapcevim安装教程:
 #### ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
