@@ -77,15 +77,13 @@ plugins=(
          git
          vi-mode
          dnf
-         ubuntu
-         archlinux
          brew
          history
          docker
          docker-compose
-         z
          zsh-autosuggestions
          zsh-syntax-highlighting
+         z
        )
 
 source $ZSH/oh-my-zsh.sh
@@ -128,36 +126,33 @@ alias szc="source ~/.zshrc"
 alias py="python"
 alias sur="su - root"
 alias sdv="sudo vim"
-# alias ssdh="echo xxxxxxxxxx | sudo -S shutdown -h 0"
+alias ssdh="echo Pei19921022 | sudo -S shutdown -h 0"
 
 # docker容器
-#alias dxcitu="docker exec -it ubuntu su - qingm"
+alias dxcitu="docker exec -it ubuntu su - qingm"
 
 # 网络代理
 alias exp="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 
 # java设置
-#alias java="/usr/local/jdk-17.0.7/bin/java"
-#alias javac="/usr/local/jdk-17.0.7/bin/javac"
-#alias jar="/usr/local/jdk-17.0.7/bin/jar"
+alias java="/usr/local/jdk-17.0.7/bin/java"
+alias javac="/usr/local/jdk-17.0.7/bin/javac"
+alias jar="/usr/local/jdk-17.0.7/bin/jar"
 
-# mysq设置
-#alias mysqlq="mysql -uqingm -pxxxxxxxxxx"
-#alias mysqlr="mysql -uroot -pxxxxxxxxxx"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/home/qingm/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/home/qingm/.anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/home/qingm/.anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/home/qingm/.anaconda3/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
+__conda_setup="$('/home/qingm/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/qingm/.anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/qingm/.anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/qingm/.anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
 # <<< conda initialize <<<
 
 # 高亮插件
