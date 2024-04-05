@@ -2,7 +2,7 @@
 
 
 ## 需要安装软件：
-git stow vim neovim zsh kitty neofetch terminator (可选安装anaconda)
+git stow vim neovim zsh kitty neofetch terminator gitui (可选安装anaconda)
 
 
 ## 下载home-data包
@@ -28,10 +28,10 @@ git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ./oh-my-zsh/
 
 
 ### 常用工具加载配置文件
-#### stow -t ~ kitty
-#### stow -t ~ terminator
-#### stow -t ~ neofetch
-#### .........以此类推
+stow -t ~ kitty
+stow -t ~ terminator
+stow -t ~ neofetch
+.........以此类推
 
 
 ### sapcevim安装教程:
