@@ -2,7 +2,7 @@
 
 
 ## 需要安装软件：
-### git stow vim neovim zsh kitty neofetch terminator gitui (可选安装anaconda)
+git stow vim neovim zsh kitty neofetch terminator gitui (可选安装anaconda)
 
 
 ## 下载home-data包
@@ -14,16 +14,22 @@
 ### cd ~/HomeData
 
 
-### 加载oh-my-zsh配置
-#### 切换到zsh: chsh -s /bin/zsh
-##### stow -t ~ oh-my-zsh
+### oh-my-zsh配置
+#### 切换到zsh
+/bin/zsh
+
+#### 修改默认shell
+chsh -s /bin/zsh
+
+#### 加载配置文件 
+stow -t ~ oh-my-zsh
 
 #### 安装插件 zsh-autosuggestions zsh-syntax-highlighting
 ##### git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ##### git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 #### 使用配置
-##### source ~/.zshrc
+source ~/.zshrc
 
 
 ### 常用工具加载配置文件
