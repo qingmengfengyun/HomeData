@@ -121,7 +121,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # 快捷方式
-alias v="vim"
+alias v="lvim"
 alias j="z"
 alias e="exit"
 alias gitui="/opt/gitui-linux-musl/gitui"
@@ -143,5 +143,8 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# 配置环境变量
+export PATH=/home/qingm/.local/bin:$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
 
