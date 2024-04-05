@@ -20,27 +20,16 @@ cd ~/HomeData
 #### 修改默认shell
 chsh -s /bin/zsh
 
-#### 加载配置文件 
-stow -t ~ oh-my-zsh
+#### 加载所有配置文件 
+stow -t ~ */
 
 #### 安装插件 zsh-autosuggestions zsh-syntax-highlighting
 ##### git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ##### git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-#### 使用配置
-source ~/.zshrc
-
-
-### 常用工具加载配置文件
-#### stow -t ~ kitty
-#### stow -t ~ terminator
-#### stow -t ~ neofetch
-#### .........以此类推
-
-
 ### sapcevim安装教程:
-#### stow -t ~ SpaceVim
 #### ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
 #### ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.vim
 
-
+#### 使用配置
+source ~/.zshrc
