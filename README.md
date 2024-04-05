@@ -15,7 +15,7 @@ cd ~/HomeData
 
 
 ### 加载oh-my-zsh配置
-####切换到zsh: chsh -s /bin/zsh
+#### 切换到zsh: chsh -s /bin/zsh
 stow -t ~ oh-my-zsh
 source ~/.zshrc
 
