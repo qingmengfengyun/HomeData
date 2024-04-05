@@ -19,8 +19,8 @@ cd ~/HomeData
 stow -t ~ oh-my-zsh
 
 #### 安装插件 zsh-autosuggestions zsh-syntax-highlighting
-git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 #### 使用配置
 source ~/.zshrc
