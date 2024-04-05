@@ -2,19 +2,19 @@
 
 
 ## 需要安装软件：
-#### git stow vim neovim zsh kitty neofetch anaconda terminator
+git stow vim neovim zsh kitty neofetch terminator (可选安装anaconda)
 
 
 ## 下载home-data包
-### git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData
+git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData
 
 
 ## 以下命令需要进入home-data文件夹下执行
-### cd ~/HomeData
+cd ~/HomeData
 
 
 ### oh-my-zsh安装教程(清华源)
-#### 切换到zsh：chsh -s /bin/zsh
+切换到zsh：chsh -s /bin/zsh
 
 #### clone oh-my-zsh
 git clone https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git ./oh-my-zsh/.oh-my-zsh/
