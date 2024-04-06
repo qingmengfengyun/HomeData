@@ -24,9 +24,12 @@ chsh -s /bin/zsh
 stow -t ~ */
 
 #### 安装插件和主题 zsh-autosuggestions zsh-syntax-highlighting powerlevel10k
-##### git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-##### git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-##### git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+'''sh
+git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git \~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git \~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://gitee.com/qingmengfengyun/powerlevel10k.git \~/.oh-my-zsh/custom/themes/powerlevel10k
+'''
+
 如果powerlevel10k字体缺失，可以到github上下载字体，然后存放在"~/.local/share/fonts/ttf/MesloLGS NF"
 
 ### sapcevim安装教程
