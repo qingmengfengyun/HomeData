@@ -44,6 +44,7 @@ git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.o
 ### sapcevim安装教程
 ```sh
 ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.vim
+ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
 ```
 
 ### neovim安装教程
