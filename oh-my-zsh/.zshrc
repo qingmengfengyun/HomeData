@@ -125,12 +125,11 @@ alias v="lvim"
 alias j="z"
 alias e="exit"
 alias gitui="/opt/gitui-linux-musl/gitui"
-alias vzc="vim ~/.zshrc"
-alias vvzc="vim ~/.SpaceVim.d/init.toml"
+alias vzc="lvim ~/.zshrc"
+alias vvzc="lvim ~/.SpaceVim.d/init.toml"
 alias szc="source ~/.zshrc"
 alias py="python"
 alias sur="su - root"
-alias sdv="sudo vim"
 
 
 # 网络代理
@@ -144,7 +143,7 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # 配置环境变量
-export PATH=/home/qingm/.local/bin:$PATH
+export PATH=~/.local/bin:$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 
