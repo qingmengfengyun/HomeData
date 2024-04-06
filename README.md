@@ -80,3 +80,24 @@ source ~/.zshrc
 ### 使用说明
 **如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了**
 
+
+## 附录
+
+### ssh服务启用方式
+#### 安装SSH服务
+```sh
+sudo dnf install openssh-server
+```
+#### 启动SSH服务
+```sh
+sudo systemctl start sshd
+```
+#### 使SSH服务在系统启动时自动运行
+```sh
+sudo systemctl enable sshd
+```
+#### 检查SSH服务状态
+```sh
+sudo systemctl status sshd
+```
+
