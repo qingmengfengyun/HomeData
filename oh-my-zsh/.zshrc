@@ -121,16 +121,17 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # 快捷方式
-alias v="lvim"
+alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
 alias j="z"
 alias e="exit"
-alias gitui="/opt/gitui-linux-musl/gitui"
-alias vzc="lvim ~/.zshrc"
-alias vvzc="lvim ~/.SpaceVim.d/init.toml"
+alias vzc="v ~/.zshrc"
+alias vvzc="v ~/.SpaceVim.d/init.toml"
 alias szc="source ~/.zshrc"
 alias py="python"
 alias sur="su - root"
 
+# 工具快捷方式
+alias gu="/opt/gitui-linux-musl/gitui"
 
 # 网络代理
 alias exp="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
