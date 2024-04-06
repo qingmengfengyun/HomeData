@@ -1,17 +1,15 @@
 # Linux通用配置指南
 
-
 ## 需要安装软件：
-git stow vim neovim zsh kitty neofetch terminator gitui (可选安装anaconda)
+**git stow vim neovim zsh kitty neofetch gitui (可选安装anaconda)**
 
-
-## 下载home-data包
+## 下载HomeData包
 ```sh
 git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
 ```
+**推荐将HomeData文件夹存放在家目录下面**
 
-
-## 以下命令需要进入home-data文件夹下执行
+## 以下命令需要进入HomeData文件夹下执行
 ```sh
 cd ~/HomeData
 ```
@@ -40,7 +38,7 @@ git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CU
 git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-如果powerlevel10k字体缺失，可以到github上下载字体，然后存放在"~/.local/share/fonts/ttf/MesloLGS NF"
+**如果powerlevel10k字体缺失，可以到[gitee](https://gitee.com/qingmengfengyun/powerlevel10k-media)下载.ttf结尾的四个文件，新建"~/.local/share/fonts/ttf/MesloLGS NF"目录，并将下载的文件存放到这个目录下即可**
 
 ### sapcevim安装教程
 ```sh
@@ -66,11 +64,18 @@ ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.vim
 LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
 ```
 
-### 使用配置
+### gitui安装教程
+[gitui官方github地址](https://github.com/neovim/neovim)
+
+#### 安装方法
+根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
+
+
+### 所有软件安装完成后使用配置
 ```sh
 source ~/.zshrc
 ```
 
 ### 使用说明
-如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了
+**如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了**
 
