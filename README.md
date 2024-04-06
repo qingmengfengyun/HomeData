@@ -1,6 +1,6 @@
 # Linux通用配置指南
 
-## 需要安装软件：
+## 需要安装软件
 **git stow vim neovim zsh kitty neofetch gitui (可选安装anaconda)**
 
 ## 下载HomeData包
@@ -9,7 +9,8 @@ git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-s
 ```
 **推荐将HomeData文件夹存放在家目录下面**
 
-## 以下命令需要进入HomeData文件夹下执行
+## 软件安装 
+以下命令需要进入HomeData文件夹下执行
 ```sh
 cd ~/HomeData
 ```
@@ -26,12 +27,12 @@ cd ~/HomeData
 chsh -s /bin/zsh
 ```
 
-#### 加载所有配置文件 
+#### 链接所有配置文件 
 ```sh
 stow -t ~ */
 ```
 
-#### 安装插件和主题 zsh-autosuggestions zsh-syntax-highlighting powerlevel10k
+#### 安装插件和主题
 ```sh
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -71,7 +72,7 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
 
 
-### 所有软件安装完成后使用配置
+### 使用配置
 ```sh
 source ~/.zshrc
 ```
