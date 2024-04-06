@@ -42,6 +42,7 @@ git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.o
 **如果powerlevel10k字体缺失，可以到[gitee](https://gitee.com/qingmengfengyun/powerlevel10k-media)下载.ttf结尾的四个文件，新建"~/.local/share/fonts/ttf/MesloLGS NF"目录，并将下载的文件存放到这个目录下即可**
 
 ### sapcevim安装教程
+跟换gitee源
 ```sh
 ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.vim
 ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
