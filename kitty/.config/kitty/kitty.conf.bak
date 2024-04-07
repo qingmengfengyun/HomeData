@@ -18,7 +18,8 @@
 # bold_italic_font Iosevka Custom Medium Italic 
 
 
-font_family       Hack Nerd Font
+# font_family       Hack Nerd Font
+font_family       Source Code Pro Bold
 # font_family       Hack Regular
 # bold_font         Hack Bold
 # italic_font       Hack Italic
@@ -58,7 +59,8 @@ font_family       Hack Nerd Font
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 12.5
+#font_size 12.5
+font_size 14
 
 #: Font size (in pts)
 
@@ -2384,7 +2386,7 @@ shell_integration no-cursor
 
 
 # BEGIN_KITTY_THEME
-# Wombat
+# Adapta Nokto Maia
 include current-theme.conf
 # END_KITTY_THEME
 
