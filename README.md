@@ -49,8 +49,8 @@ ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
 ```
 
 ### neovim安装教程
-[neovim官方github地址](https://github.com/neovim/neovim)
-[neovim国内gitee地址](https://gitee.com/qingmengfengyun/neovim)
+- [neovim官方github地址](https://github.com/neovim/neovim)
+- [neovim国内gitee地址](https://gitee.com/qingmengfengyun/neovim)
 
 #### 安装方法
 根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
@@ -69,8 +69,8 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 ```
 
 ### gitui安装教程
-[gitui官方github地址](https://github.com/extrawurst/gitui)
-[gitui国内gitee地址](https://gitee.com/qingmengfengyun/gitui)
+- [gitui官方github地址](https://github.com/extrawurst/gitui)
+- [gitui国内gitee地址](https://gitee.com/qingmengfengyun/gitui)
 
 #### 安装方法
 根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
