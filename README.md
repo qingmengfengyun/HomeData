@@ -50,6 +50,7 @@ ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
 
 ### neovim安装教程
 [neovim官方github地址](https://github.com/neovim/neovim)
+[neovim国内gitee地址](https://gitee.com/qingmengfengyun/neovim)
 
 #### 安装方法
 根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
@@ -58,9 +59,9 @@ ln -s ~/HomeData/SpaceVim/.SpaceVim/  ~/.config/nvim
 [lunarvim官方安装文档](https://www.lunarvim.org/zh-Hans/docs/installation)
 
 #### 前置条件
-请确保拥有最新版本的 Neovim v0.9.0+.
-在系统上安装 git、make、pip、python、npm、node、cargo和lazygit.
-可以使用对应系统的包管理工具下载，或者通过homebrew安装.
+- 请确保拥有最新版本的 Neovim v0.9.0+.
+- 在系统上安装 git、make、pip、python、npm、node、cargo和lazygit.
+- 可以使用对应系统的包管理工具下载，或者通过homebrew安装.
 
 #### 安装命令
 ```sh
@@ -69,6 +70,7 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 
 ### gitui安装教程
 [gitui官方github地址](https://github.com/extrawurst/gitui)
+[gitui国内gitee地址](https://gitee.com/qingmengfengyun/gitui)
 
 #### 安装方法
 根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
