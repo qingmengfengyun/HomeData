@@ -19,8 +19,10 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- 垂直新增窗口
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- 切换buffer
-keymap.set("n", "<C-L>", ":bnext<CR>")
-keymap.set("n", "<C-H>", ":bprevious<CR>")
+-- keymap.set("n", "<C-L>", ":bnext<CR>")
+keymap.set("n", "<leader>l", ":bnext<CR>")
+-- keymap.set("n", "<C-H>", ":bprevious<CR>")
+keymap.set("n", "<leader>h", ":bnext<CR>")
 
 -- ---------- 插件 ---------- ---
 -- nvim-tree
