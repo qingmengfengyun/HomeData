@@ -31,6 +31,7 @@ chsh -s /bin/zsh
 ```sh
 stow -t ~ */
 ```
+**使用说明:如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了**
 
 #### 安装插件和主题
 ```sh
@@ -80,9 +81,6 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 ```sh
 source ~/.zshrc
 ```
-
-### 使用说明
-**如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了**
 
 
 ## 附录
