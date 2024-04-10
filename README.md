@@ -75,7 +75,6 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 source ~/.zshrc
 ```
 
-
 ## 附录
 
 ### ssh服务启用方式
