@@ -1,0 +1,35 @@
+# lunarvim配置流程
+
+## 安装工具
+```sh
+yay -s fd # find
+yay -s ripgrep # grep
+```
+
+
+### 快捷方式
+- jk          退出编辑模式到命令模式
+- zc          折叠
+- leader + \  左右分割
+- leader + -  上下分割
+- leader + s  直接保存文件
+- shift + h   切换buffer
+- shift + l   切换buffer
+- leader + h  取消高亮
+- leader + h  反转高亮
+- leader + w  长代码换行
+- leader + s  代码检查
+- leader + n  切换相对行号
+- leader + q  退出vim
+- leader + c  退出当前buffer
+- j           复制下一行到本行,并空一格
+- leader + z  全屏当前buffer
+- leader + md 在浏览器预览md文件
+- leader + c  切换主题
+- leader + lf 修正代码格式
+- leader + r  执行并显示bash命令
+- leader + gg 打开gitui
+- sf          打开替换插件-spectre
+- leader + r  直接执行脚本
+- leader + f  telescope相关功能
+
