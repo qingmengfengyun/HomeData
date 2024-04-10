@@ -85,9 +85,7 @@ plugins=(
          vi-mode
          dnf
          archlinux
-         history
-         docker
-         docker-compose
+         ubuntu
          zsh-autosuggestions
          zsh-syntax-highlighting
          z
