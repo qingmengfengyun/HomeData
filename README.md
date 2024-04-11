@@ -95,4 +95,8 @@ sudo systemctl enable sshd
 sudo systemctl status sshd
 ```
 
-- test
+### vmtools开机挂载命令
+```sh
+@reboot mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
+```
+
