@@ -32,7 +32,6 @@ pacman -Su
 - `pacman -Scc` 清理所有的缓存文件
 
 ## 6.简单实例
-### 安装软件包
 - 安装或者升级单个软件包，或者一列软件包（包含依赖包），使用如下命令：
 ```sh 
 pacman -S package_name1 package_name2
