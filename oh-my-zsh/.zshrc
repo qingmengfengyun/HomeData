@@ -123,13 +123,13 @@ source $ZSH/oh-my-zsh.sh
 alias j="z"
 alias e="exit"
 alias vzc="v ~/.zshrc"
-alias vvzc="v ~/.SpaceVim.d/init.toml"
 alias szc="source ~/.zshrc"
 alias py="python"
 alias sur="su - root"
 alias jh="cd ~/HomeData"
 
 # 工具快捷方式
+alias ranger="py ~/LinuxData/Git/ranger/ranger.py"
 alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
 alias gu="/opt/gitui-linux-musl/gitui"
 alias icat="kitty +kitten icat"
