@@ -5,7 +5,7 @@
   [[default]]
     background_darkness = 0.88
     background_type = transparent
-    font = Source Code Pro Bold 14
+    font = MesloLGS NF Bold 14
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
