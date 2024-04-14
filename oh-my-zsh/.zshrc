@@ -147,4 +147,5 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 # 配置环境变量
 export PATH=~/.local/bin:$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/gitui-linux-musl"
 
