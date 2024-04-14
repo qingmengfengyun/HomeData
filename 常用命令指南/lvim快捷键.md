@@ -2,9 +2,14 @@
 
 ## 安装工具
 ```sh
-yay -s fd # find
-yay -s ripgrep # grep
+yay -S fd # find
+yay -S ripgrep # grep
+yay -S neovim 
 ```
+* 也可以使用包管理器安装，或者homebrew *
+
+
+
 
 
 ### 快捷方式
