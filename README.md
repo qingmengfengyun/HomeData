@@ -54,7 +54,7 @@ git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.o
 
 #### 前置条件
 - 请确保拥有最新版本的 Neovim v0.9.0+.
-- 在系统上安装 git、make、pip、python、npm、node、cargo和lazygit.
+- 在系统上安装 git、make、pip、python、npm、node、cargo、gcc、fd和lazygit.
 - 可以使用对应系统的包管理工具下载，或者通过homebrew安装.
 
 #### 安装命令
