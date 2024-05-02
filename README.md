@@ -85,6 +85,21 @@ rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.o
 source ~/.zshrc
 ```
 
+### gnome-yaru主题安装
+- 软件所需程序：git、meson、sassc、inkscape、optipng、ruby
+- 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
+- 在Red Hat/CentOS系统上需要安装：glib2-devel
+
+```sh
+cd yaru
+# Initialize build system (only required once per repo)
+meson build
+cd build
+# Build and install
+sudo ninja install
+```
+
+
 ## 附录
 
 ### ssh服务启用方式

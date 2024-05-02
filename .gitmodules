@@ -1,3 +1,6 @@
 [submodule "oh-my-zsh/.oh-my-zsh"]
 	path = oh-my-zsh/.oh-my-zsh
 	url = https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git
+[submodule "yaru"]
+	path = yaru
+	url = https://gitee.com/qingmengfengyun/yaru.git
