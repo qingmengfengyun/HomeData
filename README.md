@@ -1,63 +1,59 @@
 # Linux通用配置指南
 
-## 需要安装软件
-**git stow vim neovim zsh kitty neofetch gitui (可选安装anaconda)**
+## 一、需要安装软件
+**git stow zsh kitty terminator anaconda或miniconda**
 
-## 下载HomeData包
+## 二、下载HomeData包
 ```sh
 git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
 ```
 **推荐将HomeData文件夹存放在家目录下面**
 
-## 软件安装 
-以下命令需要进入HomeData文件夹下执行
+## 三、软件安装 
+
+### 1.oh-my-zsh安装
+#### a.进入HomeData目录
 ```sh
 cd ~/HomeData
 ```
-
-### oh-my-zsh配置
-
-#### 切换到zsh
+#### b.切换到zsh
 ```sh
 /bin/zsh
 ```
-
-#### 修改默认shell
+#### c.修改默认shell
 ```sh
 chsh -s /bin/zsh
 ```
-
-#### 链接所有配置文件 
+#### d.链接所有配置文件 
 ```sh
 stow -t ~ */
 ```
 **使用说明:如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了**
-
-#### 安装插件和主题
+#### e.安装插件和主题
 ```sh
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-
 **如果powerlevel10k字体缺失，可以到[gitee](https://gitee.com/qingmengfengyun/powerlevel10k-media)下载.ttf结尾的四个文件，新建"~/.local/share/fonts/ttf/MesloLGS NF"目录，并将下载的文件存放到这个目录下即可**
+#### f.使用配置
+```sh
+source ~/.zshrc
+```
 
-### neovim安装教程
+### 2.neovim安装教程
 - [neovim官方github地址](https://github.com/neovim/neovim)
 - [neovim国内gitee地址](https://gitee.com/qingmengfengyun/neovim)
-
 #### 安装方法
-根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
+- 根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
 
-### lunarvim安装教程
-[lunarvim官方安装文档](https://www.lunarvim.org/zh-Hans/docs/installation)
-
-#### 前置条件
+### 3.lunarvim安装教程
+- [lunarvim官方安装文档](https://www.lunarvim.org/zh-Hans/docs/installation)
+#### a.前置条件
 - 请确保拥有最新版本的 Neovim v0.9.0+.
 - 在系统上安装 git、make、pip、python、npm、node、cargo、gcc、fd和lazygit.
 - 可以使用对应系统的包管理工具下载，或者通过homebrew安装.
-
-#### 安装命令
+#### b.安装命令
 ```sh
 LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
 ```
@@ -65,31 +61,22 @@ LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 - $HOME/.local/bin/lvim：lvim的执行文件；
 - $HOME/.cache/lvim：lvim的缓存目录；
 - $HOME/.config/lvim.old：可能存在的lvim个性化文件备份
-
-#### 卸载命令
+#### c.卸载命令
 ```sh
 rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.old ~/.cache/lvim 
 ```
 
-
-### gitui安装教程
+### 4.gitui安装教程
 - [gitui官方github地址](https://github.com/extrawurst/gitui)
 - [gitui国内gitee地址](https://gitee.com/qingmengfengyun/gitui)
-
 #### 安装方法
-根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
+- 根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
 
 
-### 使用配置
-```sh
-source ~/.zshrc
-```
-
-### gnome-yaru主题安装
+### 5.gnome-yaru主题安装
 - 软件所需程序：git、meson、sassc、inkscape、optipng、ruby
 - 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
 - 在Red Hat/CentOS系统上需要安装：glib2-devel
-
 ```sh
 cd yaru
 # Initialize build system (only required once per repo)
@@ -99,29 +86,32 @@ cd build
 sudo ninja install
 ```
 
+## 四、附录
 
-## 附录
-
-### ssh服务启用方式
-#### 安装SSH服务
+### 1.ssh服务启用方式
+#### a.安装SSH服务
 ```sh
 sudo dnf install openssh-server
 ```
-#### 启动SSH服务
+#### b.启动SSH服务
 ```sh
 sudo systemctl start sshd
 ```
-#### 使SSH服务在系统启动时自动运行
+#### c.使SSH服务在系统启动时自动运行
 ```sh
 sudo systemctl enable sshd
 ```
-#### 检查SSH服务状态
+#### d.检查SSH服务状态
 ```sh
 sudo systemctl status sshd
 ```
 
-### vmtools开机挂载命令
+### 2.vmtools开机挂载命令
+- 虚拟机开机自动挂载主机路径
+- 需要使用crontab工具
 ```sh
+sudo crontab -e
+# 输入以下命令
 @reboot mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
 ```
 
