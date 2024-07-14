@@ -149,4 +149,5 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 export PATH=~/.local/bin:$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/opt/gitui-linux-musl"
+export PATH="$PATH:/Users/qingm/Applications/nvim-macos-x86_64/bin"
 
