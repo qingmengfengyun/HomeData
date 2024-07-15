@@ -108,3 +108,16 @@
 `git push <remote name>`
 ## 将更改推送到特定分支
 `git push <remote name> <branch>`
+
+## git删除子模块
+### 编辑.gitmodules文件，删除子模块相关配置
+`git config -f .gitmodules --remove-section submodule.[submodule_path]`
+### 编辑.git/config文件，删除子模块相关配置
+`git config --remove-section submodule.[submodule_path]`
+### 删除子模块文件夹
+`rm -rf [submodule_path]`
+### 从Git中删除子模块的跟踪记录
+`git rm --cached [submodule_path]`
+### 提交更改
+`git commit -m "Removed submodule [submodule_path]"`
+

@@ -46,16 +46,20 @@ source ~/.zshrc
 - [neovim国内gitee地址](https://gitee.com/qingmengfengyun/neovim)
 #### 安装方法
 - 根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
+- 在`~/.local/bin`中创建软连接
+```sh
+ln -s /opt/nvim-linux64/bin/nvim ~/.local/bin/
+```
 
 ### 3.lunarvim安装教程
 - [lunarvim官方安装文档](https://www.lunarvim.org/zh-Hans/docs/installation)
 #### a.前置条件
-- 请确保拥有最新版本的 Neovim v0.9.0+.
+- 请确保拥有最新版本的 Neovim v0.9.5+.
 - 在系统上安装 git、make、pip、python、npm、node、cargo、gcc、fd和lazygit.
 - 可以使用对应系统的包管理工具下载，或者通过homebrew安装.
 #### b.安装命令
 ```sh
-LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 ```
 - $HOME/.config/lvim：lvim的个性化配置文件；
 - $HOME/.local/bin/lvim：lvim的执行文件；
@@ -71,6 +75,10 @@ rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.o
 - [gitui国内gitee地址](https://gitee.com/qingmengfengyun/gitui)
 #### 安装方法
 - 根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
+- 在`~/.local/bin`中创建软连接
+```sh
+ln -s /opt/gitui-linux-musl/gitui ~/.local/bin/
+```
 
 
 ### 5.gnome-yaru主题安装
@@ -78,6 +86,7 @@ rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.o
 - 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
 - 在Red Hat/CentOS系统上需要安装：glib2-devel
 ```sh
+git clone https://gitee.com/qingmengfengyun/yaru.git
 cd yaru
 # Initialize build system (only required once per repo)
 meson build

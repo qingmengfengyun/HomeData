@@ -131,7 +131,7 @@ alias jh="cd ~/HomeData"
 # 工具快捷方式
 alias ra="py ~/LinuxData/Git/ranger/ranger.py"
 alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
-alias gu="/opt/gitui-linux-musl/gitui"
+alias gu="gitui"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 
@@ -147,7 +147,4 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 
 # 配置环境变量
 export PATH=~/.local/bin:$PATH
-export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:/opt/gitui-linux-musl"
-export PATH="$PATH:/Users/qingm/Applications/nvim-macos-x86_64/bin"
 
