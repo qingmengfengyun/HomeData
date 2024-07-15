@@ -80,7 +80,6 @@ rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.o
 ln -s /opt/gitui-linux-musl/gitui ~/.local/bin/
 ```
 
-
 ### 5.gnome-yaru主题安装
 - 软件所需程序：git、meson、sassc、inkscape、optipng、ruby
 - 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
@@ -94,6 +93,21 @@ cd build
 # Build and install
 sudo ninja install
 ```
+
+### 6.gnome桌面优化
+- 所需程序：gnome-tweaks、gnome-shell-extensions
+#### 必备插件
+- Dash to Dock
+快速启动应用程序，更快地在 windows 和桌面之间切换
+- NetSpeed
+显示网速、内存、电池用量等等
+- User Themes
+加载主题插件
+- AppIndicator and KStatusNotifierItem Support
+状态栏插件
+- Blur my Shell
+背景透明插件
+
 
 ## 四、附录
 
