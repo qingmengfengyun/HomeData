@@ -64,7 +64,7 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 - $HOME/.config/lvim：lvim的个性化配置文件；
 - $HOME/.local/bin/lvim：lvim的执行文件；
 - $HOME/.cache/lvim：lvim的缓存目录；
-- $HOME/.config/lvim.old：可能存在的lvim个性化文件备份
+- $HOME/.config/lvim.old：可能存在的lvim文件备份
 #### c.卸载命令
 ```sh
 rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.old ~/.cache/lvim 
