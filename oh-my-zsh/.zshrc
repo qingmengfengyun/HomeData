@@ -85,6 +85,7 @@ plugins=(
          vi-mode
          dnf
          suse
+         ubuntu
          archlinux
          zsh-autosuggestions
          zsh-syntax-highlighting
