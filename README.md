@@ -138,3 +138,23 @@ sudo crontab -e
 @reboot mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
 ```
 
+### 3.添加ssh密钥
+- 生成ssh密钥
+```sh
+ssh-keygen -t rsa -b 4096
+```
+- 如果需要指定密钥名(如“gitkey”)，则需要在config中添加如下内容
+```sh
+# github
+Host github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/gitkey
+
+# gitee
+Host gitee.com
+HostName gitee.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/gitkey
+```
+
