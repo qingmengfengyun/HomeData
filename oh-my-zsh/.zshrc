@@ -130,15 +130,10 @@ alias sur="su - root"
 alias jh="cd ~/HomeData"
 
 # 工具快捷方式
-alias ra="py ~/LinuxData/Git/ranger/ranger.py"
+alias ra="ranger"
 alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
-alias gu="~/LinuxData/Applications/gitui/gitui"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
-
-# 网络代理
-alias exp="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
-
 
 # 高亮插件
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
