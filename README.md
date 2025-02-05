@@ -70,17 +70,8 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.old ~/.cache/lvim 
 ```
 
-### 4.gitui安装教程
-- [gitui官方github地址](https://github.com/extrawurst/gitui)
-- [gitui国内gitee地址](https://gitee.com/qingmengfengyun/gitui)
-#### 安装方法
-- 根据系统版本下载对应gitui安装包，解压后存放在"/opt/gitui-linux-musl/"下面
-- 在`~/.local/bin`中创建软连接
-```sh
-ln -s /opt/gitui-linux-musl/gitui ~/.local/bin/
-```
 
-### 5.gnome-yaru主题安装
+### 4.gnome-yaru主题安装
 - 软件所需程序：git、meson、sassc、inkscape、optipng、ruby
 - 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
 - 在Red Hat/CentOS系统上需要安装：glib2-devel
@@ -94,7 +85,7 @@ cd build
 sudo ninja install
 ```
 
-### 6.gnome桌面优化
+### 5.gnome桌面优化
 - 所需程序：gnome-tweaks、gnome-shell-extensions
 #### 必备插件
 - Dash to Dock
