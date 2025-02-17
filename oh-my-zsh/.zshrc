@@ -127,6 +127,7 @@ alias szc="source ~/.zshrc"
 alias py="python"
 alias sur="su - root"
 alias jh="cd ~/HomeData"
+alias jl="cd ~/LinuxData"
 
 # 工具快捷方式
 # alias ra="ranger"
