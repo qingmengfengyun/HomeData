@@ -1,49 +1,52 @@
 # Linux通用配置指南
 
 ## 一、需要安装软件
-**git stow zsh kitty terminator anaconda或miniconda**
+- git 
+- stow 
+- zsh 
+- kitty 
+- terminator 
+- anaconda或miniconda
 
-## 二、下载HomeData包
+## 二、配置和优化 
+
+### 1.oh-my-zsh
+- 在HomeData项目中，oh-my-zsh是其子项目,可以直接通过软连接安装
 ```sh
+# 从github/gitee拉取HomeData项目
+# github
+git clone https://github.com/qingmengfengyun/HomeData.git ~/HomeData --recurse-submodules
+# gitee
 git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
-```
-**推荐将HomeData文件夹存放在家目录下面**
 
-## 三、软件安装 
-
-### 1.oh-my-zsh安装
-#### a.进入HomeData目录
-```sh
+# 进入HomeData目录
 cd ~/HomeData
-```
-#### b.切换到zsh
-```sh
+
+# 切换到zsh
 /bin/zsh
-```
-#### c.修改默认shell
-```sh
+
+# 修改默认shell
 chsh -s /bin/zsh
-```
-#### d.链接所有配置文件 
-```sh
-stow -t ~ */
-```
-**使用说明:如果在使用stow加载配置文件报错,一般是已经有生成的配置文件了,删除该配置文件后再次执行就可以了**
-#### e.安装插件和主题
-```sh
+
+# 链接oh-my-zsh及配置文件 
+stow -t ~ oh-my-zsh
+
+#安装插件和主题
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-**如果powerlevel10k字体缺失，可以到[powerlevel10k-media](https://gitee.com/qingmengfengyun/powerlevel10k-media)下载.ttf结尾的四个文件，新建"~/.local/share/fonts/ttf/MesloLGS NF"目录，并将下载的文件存放到这个目录下即可**
-#### f.使用配置
-```sh
+
+# 使用配置
 source ~/.zshrc
 ```
 
-### 2.neovim安装教程
+**如果powerlevel10k字体缺失，可以到[powerlevel10k-media](https://gitee.com/qingmengfengyun/powerlevel10k-media)下载.ttf结尾的四个文件，新建"~/.local/share/fonts/ttf/MesloLGS NF"目录，并将下载的文件存放到这个目录下即可**
+
+
+### 2.neovim
+
 - [neovim官方github地址](https://github.com/neovim/neovim)
-- [neovim国内gitee地址](https://gitee.com/qingmengfengyun/neovim)
+
 #### 安装方法
 - 根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
 - 在`~/.local/bin`中创建软连接
@@ -51,7 +54,7 @@ source ~/.zshrc
 ln -s /opt/nvim-linux64/bin/nvim ~/.local/bin/
 ```
 
-### 3.lunarvim安装教程
+### 3.lunarvim
 - [lunarvim官方安装文档](https://www.lunarvim.org/zh-Hans/docs/installation)
 #### a.前置条件
 - 请确保拥有最新版本的 Neovim v0.9.5+.
@@ -78,9 +81,11 @@ rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.o
 ```sh
 git clone https://gitee.com/qingmengfengyun/yaru.git
 cd yaru
+
 # Initialize build system (only required once per repo)
 meson build
 cd build
+
 # Build and install
 sudo ninja install
 ```
@@ -100,23 +105,20 @@ sudo ninja install
 背景透明插件
 
 
-## 四、附录
+## 三、附录
 
 ### 1.ssh服务启用方式
-#### a.安装SSH服务
 ```sh
+# 安装SSH服务
 sudo dnf install openssh-server
-```
-#### b.启动SSH服务
-```sh
+
+# 启动SSH服务
 sudo systemctl start sshd
-```
-#### c.使SSH服务在系统启动时自动运行
-```sh
+
+# 使SSH服务在系统启动时自动运行
 sudo systemctl enable sshd
-```
-#### d.检查SSH服务状态
-```sh
+
+# 检查SSH服务状态
 sudo systemctl status sshd
 ```
 
