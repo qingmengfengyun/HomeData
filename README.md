@@ -13,11 +13,8 @@
 ### 1.oh-my-zsh
 - 在HomeData项目中，oh-my-zsh是其子项目,可以直接通过软连接安装
 ```sh
-# 从github/gitee拉取HomeData项目
-# github
+# 从github拉取HomeData项目
 git clone https://github.com/qingmengfengyun/HomeData.git ~/HomeData --recurse-submodules
-# gitee
-git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
 
 # 进入HomeData目录
 cd ~/HomeData
@@ -31,7 +28,15 @@ chsh -s /bin/zsh
 # 链接oh-my-zsh及配置文件 
 stow -t ~ oh-my-zsh
 
-#安装插件和主题
+# 安装插件和主题
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# 如果github无法访问，可以用gitee备用地址
+# 项目地址
+git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
+# 插件地址
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -79,7 +84,7 @@ rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.o
 - 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
 - 在Red Hat/CentOS系统上需要安装：glib2-devel
 ```sh
-git clone https://gitee.com/qingmengfengyun/yaru.git
+git clone https://github.com/ubuntu/yaru.git
 cd yaru
 
 # Initialize build system (only required once per repo)
@@ -88,6 +93,9 @@ cd build
 
 # Build and install
 sudo ninja install
+
+# 备用地址
+git clone https://gitee.com/qingmengfengyun/yaru.git
 ```
 
 ### 5.gnome桌面优化
