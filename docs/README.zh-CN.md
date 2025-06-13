@@ -1,5 +1,7 @@
 # Linux通用配置指南
 
+- [Englist](../README.md) | [中文](./README.zh-CN.md)
+
 ## 一、需要安装软件
 - git 
 - stow 

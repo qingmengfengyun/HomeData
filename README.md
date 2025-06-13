@@ -1,6 +1,6 @@
 # General Configuration Guide for Linux
 
-- [Englist](./README.md) | [中文](./README.zh-CN.md)
+- [Englist](./README.md) | [中文](./docs/README.zh-CN.md)
 
 ## 一、Software that needs to be installed
 - git 
