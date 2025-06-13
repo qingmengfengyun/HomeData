@@ -1,5 +1,7 @@
 # General Configuration Guide for Linux
 
+- [Englist](./README.md) | [中文](./README.zh-CN.md)
+
 ## 一、Software that needs to be installed
 - git 
 - stow 
@@ -25,7 +27,7 @@ cd ~/HomeData
 # Modify default shell
 chsh -s /bin/zsh
 
-# Link oh my zsh and configuration files 
+# Link oh-my-zsh and configuration files 
 stow -t ~ oh-my-zsh
 
 # Install plugins and themes
@@ -50,39 +52,39 @@ source ~/.zshrc
 
 ### 2.neovim
 
-- [neovim官方github地址](https://github.com/neovim/neovim)
+- [Neovim Official GitHub Address](https://github.com/neovim/neovim)
 
-#### 安装方法
-- 根据系统版本下载对应neovim安装包，解压后存放在"/opt/nvim-linux64"下面
-- 在`~/.local/bin`中创建软连接
+#### Installation method
+- Download the corresponding Neovim installation package based on the system version, unzip it, and store it under "/opt/nvim-linux64"
+- Create a soft connection in "~/.local/bin"
 ```sh
 ln -s /opt/nvim-linux64/bin/nvim ~/.local/bin/
 ```
 
 ### 3.lunarvim
-- [lunarvim官方安装文档](https://www.lunarvim.org/zh-Hans/docs/installation)
-#### a.前置条件
-- 请确保拥有最新版本的 Neovim v0.9.5+.
-- 在系统上安装 git、make、pip、python、npm、node、cargo、gcc、fd和lazygit.
-- 可以使用对应系统的包管理工具下载，或者通过homebrew安装.
-#### b.安装命令
+- [Lunarvim Official Installation Document](https://www.lunarvim.org/zh-Hans/docs/installation)
+#### a.Preconditions
+- Please ensure that you have the latest version of Neovim v0.9.5.
+- Install git, make, pip, python, npm, node, cargo, gcc, fd, and lazygit on the system.
+- You can download it using the package management tool of the corresponding system, or install it through Homebrew.
+#### b.Installation command
 ```sh
 LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 ```
-- $HOME/.config/lvim：lvim的个性化配置文件；
-- $HOME/.local/bin/lvim：lvim的执行文件；
-- $HOME/.cache/lvim：lvim的缓存目录；
-- $HOME/.config/lvim.old：可能存在的lvim个性化文件备份
-#### c.卸载命令
+- $HOME/.config/lvim：Personalized configuration file for lvim.
+- $HOME/.local/bin/lvim：The executable file of lvim.
+- $HOME/.cache/lvim：cache directory for lvim.
+- $HOME/.config/lvim.old：Possible backup of lvim personalized files.
+#### c.Uninstall command
 ```sh
 rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.old ~/.cache/lvim 
 ```
 
 
-### 4.gnome-yaru主题安装
-- 软件所需程序：git、meson、sassc、inkscape、optipng、ruby
-- 在Debian/Ubuntu系统上需要安装：libgtk-4-dev、libgio-2.0-dev
-- 在Red Hat/CentOS系统上需要安装：glib2-devel
+### 4.Installation of gnome-yaru theme
+- Software required programs：git、meson、sassc、inkscape、optipng、ruby.
+- On the Debian/Ubuntu system, it is necessary to install libgtk-4-dev and libgio-2.0-dev.
+- Installation of glib2 level is required on Red Hat/CentOS system.
 ```sh
 git clone https://github.com/ubuntu/yaru.git
 cd yaru
@@ -94,57 +96,57 @@ cd build
 # Build and install
 sudo ninja install
 
-# 备用地址
+# Backup address
 git clone https://gitee.com/qingmengfengyun/yaru.git
 ```
 
-### 5.gnome桌面优化
-- 所需程序：gnome-tweaks、gnome-shell-extensions
-#### 必备插件
+### 5.Gnome Desktop Optimization
+- Required programs：gnome-tweaks、gnome-shell-extensions
+#### Essential plugins
 - Dash to Dock
-快速启动应用程序，更快地在 windows 和桌面之间切换
+Quickly launch applications and switch between Windows and desktop faster
 - NetSpeed
-显示网速、内存、电池用量等等
+Display network speed, memory, battery usage, etc
 - User Themes
-加载主题插件
+Load theme plugin
 - AppIndicator and KStatusNotifierItem Support
-状态栏插件
+Status bar plugin
 - Blur my Shell
-背景透明插件
+Background Transparent Plugin
 
 
-## 三、附录
+## 三、Appendix
 
-### 1.ssh服务启用方式
+### 1.SSH service activation method
 ```sh
-# 安装SSH服务
+# Install SSH service
 sudo dnf install openssh-server
 
-# 启动SSH服务
+# Start SSH service
 sudo systemctl start sshd
 
-# 使SSH服务在系统启动时自动运行
+# Automatically run SSH service at system startup
 sudo systemctl enable sshd
 
-# 检查SSH服务状态
+# Check SSH service status
 sudo systemctl status sshd
 ```
 
-### 2.vmtools开机挂载命令
-- 虚拟机开机自动挂载主机路径
-- 需要使用crontab工具
+### 2.vmtools boot mount command
+- Virtual machine automatically mounts host path upon startup
+- Need to use crontab
 ```sh
 sudo crontab -e
-# 输入以下命令
+# Enter the following command
 @reboot mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
 ```
 
-### 3.添加ssh密钥
-- 生成ssh密钥
+### 3.Add SSH key
+- Generate SSH key
 ```sh
 ssh-keygen -t rsa -b 4096
 ```
-- 如果需要指定密钥名(如“gitkey”)，则需要在config中添加如下内容
+- If you need to specify a key name (such as "gitkey"), you need to add the following content in the config
 ```sh
 # github
 Host github.com
