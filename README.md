@@ -1,6 +1,6 @@
-# Linux通用配置指南
+# General Configuration Guide for Linux
 
-## 一、需要安装软件
+## 一、Software that needs to be installed
 - git 
 - stow 
 - zsh 
@@ -8,44 +8,44 @@
 - terminator 
 - anaconda或miniconda
 
-## 二、配置和优化 
+## 二、Configuration and optimization
 
 ### 1.oh-my-zsh
-- 在HomeData项目中，oh-my-zsh是其子项目,可以直接通过软连接安装
+- In the HomeData project, oh-my-zsh is a sub project that can be directly installed through a soft connection
 ```sh
-# 从github拉取HomeData项目
+# Pull the HomeData project from GitHub
 git clone https://github.com/qingmengfengyun/HomeData.git ~/HomeData --recurse-submodules
 
-# 进入HomeData目录
+# Enter the HomeData directory
 cd ~/HomeData
 
-# 切换到zsh
+# Switch to zsh
 /bin/zsh
 
-# 修改默认shell
+# Modify default shell
 chsh -s /bin/zsh
 
-# 链接oh-my-zsh及配置文件 
+# Link oh my zsh and configuration files 
 stow -t ~ oh-my-zsh
 
-# 安装插件和主题
+# Install plugins and themes
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# 如果github无法访问，可以用gitee备用地址
-# 项目地址
+# If GitHub cannot be accessed, you can use a backup address on Gitee
+# Project address
 git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
-# 插件地址
+# Plugin address
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# 使用配置
+# Use configuration
 source ~/.zshrc
 ```
 
-**如果powerlevel10k字体缺失，可以到[powerlevel10k-media](https://gitee.com/qingmengfengyun/powerlevel10k-media)下载.ttf结尾的四个文件，新建"~/.local/share/fonts/ttf/MesloLGS NF"目录，并将下载的文件存放到这个目录下即可**
+**If the powerlevel10k font is missing, you can go to [powerlevel10k media](https://gitee.com/qingmengfengyun/powerlevel10k-media)Download the four files ending in .ttf, create a new directory named "~/. local/share/fonts/ttf/MesloLGS NF", and store the downloaded files in this directory**
 
 
 ### 2.neovim
