@@ -8,7 +8,7 @@
 - zsh 
 - kitty 
 - terminator 
-- anaconda或miniconda
+- anaconda or miniconda
 
 ## 二、Configuration and optimization
 
@@ -47,7 +47,7 @@ git clone https://gitee.com/qingmengfengyun/powerlevel10k.git ${ZSH_CUSTOM:-~/.o
 source ~/.zshrc
 ```
 
-**If the powerlevel10k font is missing, you can go to [powerlevel10k media](https://gitee.com/qingmengfengyun/powerlevel10k-media)Download the four files ending in .ttf, create a new directory named "~/. local/share/fonts/ttf/MesloLGS NF", and store the downloaded files in this directory**
+**If the powerlevel10k font is missing, you can go to [powerlevel10k-media](https://gitee.com/qingmengfengyun/powerlevel10k-media)Download the four files ending in ".ttf", create a new directory named "~/. local/share/fonts/ttf/MesloLGS NF", and store the downloaded files in this directory**
 
 
 ### 2.neovim
@@ -115,7 +115,7 @@ Status bar plugin
 Background Transparent Plugin
 
 
-## 三、Appendix
+## 三、appendix
 
 ### 1.SSH service activation method
 ```sh
