@@ -103,16 +103,18 @@ git clone https://gitee.com/qingmengfengyun/yaru.git
 ### 5.Gnome Desktop Optimization
 - Required programs：gnome-tweaks、gnome-shell-extensions
 #### Essential plugins
-- Dash to Dock
+- `Dash to Dock`  
 Quickly launch applications and switch between Windows and desktop faster
-- NetSpeed
+- `NetSpeed`  
 Display network speed, memory, battery usage, etc
-- User Themes
+- `User Themes`  
 Load theme plugin
-- AppIndicator and KStatusNotifierItem Support
+- `AppIndicator and KStatusNotifierItem Support`  
 Status bar plugin
-- Blur my Shell
+- `Blur my Shell`  
 Background Transparent Plugin
+- `Hide Top Bar`  
+Hide the status bar plugin
 
 
 ## 三、appendix

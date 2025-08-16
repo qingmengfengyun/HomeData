@@ -103,16 +103,18 @@ git clone https://gitee.com/qingmengfengyun/yaru.git
 ### 5.gnome桌面优化
 - 所需程序：gnome-tweaks、gnome-shell-extensions
 #### 必备插件
-- Dash to Dock
+- `Dash to Dock`  
 快速启动应用程序，更快地在 windows 和桌面之间切换
-- NetSpeed
+- `NetSpeed`  
 显示网速、内存、电池用量等等
-- User Themes
+- `User Themes`  
 加载主题插件
-- AppIndicator and KStatusNotifierItem Support
+- `AppIndicator and KStatusNotifierItem Support`  
 状态栏插件
-- Blur my Shell
+- `Blur my Shell`  
 背景透明插件
+- `Hide Top Bar`  
+隐藏状态栏插件
 
 
 ## 三、附录
