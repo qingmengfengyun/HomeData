@@ -16,10 +16,11 @@
 - 在HomeData项目中，oh-my-zsh是其子项目,可以直接通过软连接安装
 ```sh
 # 从github拉取HomeData项目
-git clone https://github.com/qingmengfengyun/HomeData.git ~/HomeData --recurse-submodules
+mkdir -p ~/Documents/github
+git clone https://github.com/qingmengfengyun/HomeData.git ~/Documents/github/HomeData --recurse-submodules
 
 # 进入HomeData目录
-cd ~/HomeData
+cd ~/Documents/github/HomeData
 
 # 切换到zsh
 /bin/zsh
@@ -37,7 +38,7 @@ git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zs
 
 # 如果github无法访问，可以用gitee备用地址
 # 项目地址
-git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
+git clone https://gitee.com/qingmengfengyun/HomeData.git ~/Documents/github/HomeData --recurse-submodules
 # 插件地址
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

@@ -16,10 +16,11 @@
 - In the HomeData project, oh-my-zsh is a sub project that can be directly installed through a soft connection
 ```sh
 # Pull the HomeData project from GitHub
-git clone https://github.com/qingmengfengyun/HomeData.git ~/HomeData --recurse-submodules
+mkdir -p ~/Documents/github
+git clone https://github.com/qingmengfengyun/HomeData.git ~/Documents/github/HomeData --recurse-submodules
 
 # Enter the HomeData directory
-cd ~/HomeData
+cd ~/Documents/github/HomeData
 
 # Switch to zsh
 /bin/zsh
@@ -37,7 +38,7 @@ git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zs
 
 # If GitHub cannot be accessed, you can use a backup address on Gitee
 # Project address
-git clone https://gitee.com/qingmengfengyun/home-data.git ~/HomeData --recurse-submodules
+git clone https://gitee.com/qingmengfengyun/HomeData.git ~/Documents/github/HomeData --recurse-submodules
 # Plugin address
 git clone https://gitee.com/qingmengfengyun/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/qingmengfengyun/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
