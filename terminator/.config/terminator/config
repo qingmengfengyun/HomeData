@@ -4,7 +4,7 @@
   [[default]]
     background_darkness = 0.8
     background_type = transparent
-    font = MesloLGS NF Bold 14
+    font = MesloLGS NF 14
     foreground_color = "#ffffff"
     show_titlebar = False
     scrollbar_position = hidden
