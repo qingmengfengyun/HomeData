@@ -83,6 +83,8 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
          git
          vi-mode
+         docker
+         docker-compose
          dnf
          history
          ubuntu
