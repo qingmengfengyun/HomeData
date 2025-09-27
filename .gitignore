@@ -6,6 +6,7 @@
 # log/
 *.swp
 .DS_Store
+fish_variables
 
 # editor configs
 .vscode
