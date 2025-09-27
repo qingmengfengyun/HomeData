@@ -13,10 +13,18 @@ alias aguu="sudo apt update && sudo apt upgrade"
 
 # 工具快捷方式
 alias py="python"
-alias ra="ranger"
+alias ra="py ~/Application/ranger/ranger.py"
 alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
+
+# git快捷键
+alias gcam="git commit -am"
+alias glo="git log --oneline"
+alias grv="git remote -v"
+alias gra="git remote add"
+alias grrm="git remote remove"
+alias grmv="git remote rename"
 
 # 配置环境变量
 set -x PATH $HOME/.local/bin $HOME/bin $PATH
