@@ -49,16 +49,24 @@ alias dnfr="sudo dnf remove"
 alias dnfs="sudo dnf search"
 
 # 快速返回上级目录
-function ..    ; cd .. ; end
-function ...   ; cd ../.. ; end
-function ....  ; cd ../../.. ; end
-function ..... ; cd ../../../.. ; end
+function ..
+    cd ..
+end
+function ...
+    cd ../..
+end
+function ....
+    cd ../../..
+end
+function .....
+    cd ../../../..
+end
 
 # ===== 启动命令 =====
 # 欢迎信息
 function fish_greeting
-    echo "🐟 Hellow QingmPei"
-    echo "欢迎使用 Fish Shell!"
+    echo "Hello QingmPei!"
+    echo "欢迎使用 Fish shell 🐟"
     echo "时间: $(date)"
 end
 
@@ -68,7 +76,7 @@ set -x PATH $HOME/.local/bin $HOME/bin $PATH
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /home/qingm/.miniconda3/bin/conda
-    eval /home/qingm/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
+    eval /home/qingm/.miniconda3/bin/conda "shell.fish" hook $argv | source
 else
     if test -f "/home/qingm/.miniconda3/etc/fish/conf.d/conda.fish"
         . "/home/qingm/.miniconda3/etc/fish/conf.d/conda.fish"
