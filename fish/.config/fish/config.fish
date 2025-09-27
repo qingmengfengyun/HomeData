@@ -1,0 +1,50 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+# 快捷方式
+alias j="z"
+alias e="exit"
+alias vzc="v ~/.config/fish/config.fish"
+alias szc="source ~/.config/fish/config.fish"
+alias sur="su - root"
+alias jh="cd ~/Documents/github/HomeData"
+alias aguu="sudo apt update && sudo apt upgrade"
+
+# 工具快捷方式
+alias py="python"
+alias ra="ranger"
+alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
+alias icat="kitty +kitten icat"
+alias kdiff="kitty +kitten diff"
+
+# 配置环境变量
+set -x PATH $HOME/.local/bin $HOME/bin $PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/qingm/.miniconda3/bin/conda
+    eval /home/qingm/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/qingm/.miniconda3/etc/fish/conf.d/conda.fish"
+        . "/home/qingm/.miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/qingm/.miniconda3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+
+# 快速返回上级目录
+function ..    ; cd .. ; end
+function ...   ; cd ../.. ; end
+function ....  ; cd ../../.. ; end
+function ..... ; cd ../../../.. ; end
+
+# ===== 启动命令 =====
+# 欢迎信息
+function fish_greeting
+    echo "🐟 Hellow QingmPei"
+    echo "欢迎使用 Fish Shell!"
+    echo "时间: $(date)"
+end
+
