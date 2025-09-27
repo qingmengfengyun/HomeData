@@ -126,11 +126,13 @@ alias j="z"
 alias e="exit"
 alias vzc="v ~/.zshrc"
 alias szc="source ~/.zshrc"
-alias py="python"
 alias sur="su - root"
 alias jh="cd ~/Documents/github/HomeData"
+alias cl="clear"
+alias h="history"
 
 # 工具快捷方式
+alias py="python"
 alias ra="ranger"
 alias v='bash -c '\''my_vim=""; if command -v lvim >/dev/null 2>&1; then my_vim="lvim"; else if command -v nvim >/dev/null 2>&1; then my_vim="nvim"; else my_vim="vim"; fi; fi; if [ $# -gt 0 ]; then $my_vim "$@"; else $my_vim .; fi'\'' bash'
 alias icat="kitty +kitten icat"

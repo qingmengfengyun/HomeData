@@ -9,7 +9,8 @@ alias vzc="v ~/.config/fish/config.fish"
 alias szc="source ~/.config/fish/config.fish"
 alias sur="su - root"
 alias jh="cd ~/Documents/github/HomeData"
-alias aguu="sudo apt update && sudo apt upgrade"
+alias cl="clear"
+alias h="history"
 
 # 工具快捷方式
 alias py="python"
@@ -21,10 +22,45 @@ alias kdiff="kitty +kitten diff"
 # git快捷键
 alias gcam="git commit -am"
 alias glo="git log --oneline"
+alias gst="git status"
+alias gsw="git switch"
 alias grv="git remote -v"
 alias gra="git remote add"
 alias grrm="git remote remove"
 alias grmv="git remote rename"
+
+# docker快捷键
+alias dils="docker images"
+alias dirm="docker rmi"
+alias dcls="docker ps"
+alias drm="docker rm"
+alias dclsa="docker ps -a"
+alias dxcit="docker exec -it"
+alias dxcitu="docker exec -it ubuntu zsh"
+
+# Linux命令别名
+alias aguu="sudo apt update && sudo apt upgrade"
+alias agi="sudo apt install"
+alias agr="sudo apt remove"
+alias ags="sudo apt search"
+alias dnfu="sudo dnf update && sudo dnf upgrade"
+alias dnfi="sudo dnf install"
+alias dnfr="sudo dnf remove"
+alias dnfs="sudo dnf search"
+
+# 快速返回上级目录
+function ..    ; cd .. ; end
+function ...   ; cd ../.. ; end
+function ....  ; cd ../../.. ; end
+function ..... ; cd ../../../.. ; end
+
+# ===== 启动命令 =====
+# 欢迎信息
+function fish_greeting
+    echo "🐟 Hellow QingmPei"
+    echo "欢迎使用 Fish Shell!"
+    echo "时间: $(date)"
+end
 
 # 配置环境变量
 set -x PATH $HOME/.local/bin $HOME/bin $PATH
@@ -41,18 +77,3 @@ else
     end
 end
 # <<< conda initialize <<<
-
-# 快速返回上级目录
-function ..    ; cd .. ; end
-function ...   ; cd ../.. ; end
-function ....  ; cd ../../.. ; end
-function ..... ; cd ../../../.. ; end
-
-# ===== 启动命令 =====
-# 欢迎信息
-function fish_greeting
-    echo "🐟 Hellow QingmPei"
-    echo "欢迎使用 Fish Shell!"
-    echo "时间: $(date)"
-end
-
