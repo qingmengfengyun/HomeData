@@ -30,6 +30,6 @@ cursor_shape            block
 open_url_with           default
 
 # BEGIN_KITTY_THEME
-# Doom One
+# OneDark-Pro
 include current-theme.conf
 # END_KITTY_THEME
