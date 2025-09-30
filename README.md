@@ -13,7 +13,7 @@
 ## 二、Configuration and optimization
 
 ### 1.oh-my-zsh
-- In the HomeData project, oh-my-zsh is a sub project that can be directly installed through a soft connection
+- In the "HomeData" project, oh-my-zsh is a sub project that can be directly installed through a soft connection
 ```sh
 # Pull the HomeData project from GitHub
 mkdir -p ~/Documents/github
@@ -78,7 +78,11 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 - $HOME/.config/lvim.old：Possible backup of lvim personalized files.
 #### c.Uninstall command
 ```sh
-rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.old ~/.cache/lvim 
+rm -rf ~/.config/lvim \  
+       ~/.local/share/lunarvim \  
+       ~/.local/bin/lvim \  
+       ~/.config/lvim.old \  
+       ~/.cache/lvim 
 ```
 
 
@@ -164,3 +168,16 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/gitkey
 ```
 
+### 4.fish shell配置
+- Fish shell installation and optimization configuration process
+```sh
+# install fish shell
+sudo dnf install fish
+
+# install oh-my-fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+# Associated configuration files
+cd ~/Documents/github/HomeData && stow -t ~ fish
+```
+- **[oh-my-fish official GitHub address](https://github.com/oh-my-fish/oh-my-fish)**

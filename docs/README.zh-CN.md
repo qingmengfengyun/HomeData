@@ -13,7 +13,7 @@
 ## 二、配置和优化 
 
 ### 1.oh-my-zsh
-- 在HomeData项目中，oh-my-zsh是其子项目,可以直接通过软连接安装
+- 在"HomeData"项目中，oh-my-zsh是其子项目,可以直接通过软连接安装
 ```sh
 # 从github拉取HomeData项目
 mkdir -p ~/Documents/github
@@ -33,7 +33,7 @@ stow -t ~ oh-my-zsh
 
 # 安装插件和主题
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting.git
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # 如果github无法访问，可以用gitee备用地址
@@ -78,7 +78,11 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 - $HOME/.config/lvim.old：可能存在的lvim个性化文件备份
 #### c.卸载命令
 ```sh
-rm -rf ~/.config/lvim ~/.local/share/lunarvim ~/.local/bin/lvim ~/.config/lvim.old ~/.cache/lvim 
+rm -rf ~/.config/lvim \  
+       ~/.local/share/lunarvim \  
+       ~/.local/bin/lvim \  
+       ~/.config/lvim.old \  
+       ~/.cache/lvim
 ```
 
 
@@ -163,4 +167,18 @@ HostName gitee.com
 PreferredAuthentications publickey
 IdentityFile ~/.ssh/gitkey
 ```
+
+### 4.fish shell配置
+- fish shell安装和优化配置流程
+```sh
+# 安装fish shell
+sudo dnf install fish
+
+# 安装oh-my-fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+# 关联配置文件
+cd ~/Documents/github/HomeData && stow -t ~ fish
+```
+- **[oh-my-fish官方github地址](https://github.com/oh-my-fish/oh-my-fish)**
 
