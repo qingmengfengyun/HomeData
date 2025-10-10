@@ -36,7 +36,7 @@ alias dcls="docker ps"
 alias drm="docker rm"
 alias dclsa="docker ps -a"
 alias dxcit="docker exec -it"
-alias dxcitu="docker exec -it ubuntu zsh"
+alias dxcitu="docker exec -it ubuntu fish"
 
 # Linux命令别名
 alias aguu="sudo apt update && sudo apt upgrade"
