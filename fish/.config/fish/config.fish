@@ -4,6 +4,7 @@ end
 
 # 快捷方式
 alias j="z"
+alias l="ls"
 alias e="exit"
 alias vzc="v ~/.config/fish/config.fish"
 alias szc="source ~/.config/fish/config.fish"
