@@ -124,6 +124,7 @@ source $ZSH/oh-my-zsh.sh
 # 快捷方式
 alias j="z"
 alias e="exit"
+alias c="cd"
 alias vzc="v ~/.zshrc"
 alias szc="source ~/.zshrc"
 alias sur="su - root"
