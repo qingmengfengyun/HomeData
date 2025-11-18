@@ -72,6 +72,11 @@ function fish_greeting
     echo "时间: $(date)"
 end
 
+# 配置网络代理
+set -gx http_proxy "http://127.0.0.1:7897"
+set -gx https_proxy "http://127.0.0.1:7897"
+set -gx all_proxy "socks5://127.0.0.1:7897"
+
 # 配置环境变量
 set -x PATH $HOME/.local/bin $HOME/bin $PATH
 
