@@ -68,7 +68,7 @@ end
 # ===== 启动命令 =====
 # 欢迎信息
 function fish_greeting
-    echo "Hello QingmPei!"
+    echo "Hello Zavier!"
     echo "欢迎使用 Fish shell 🐟"
     echo "时间: $(date)"
 end
